@@ -1,13 +1,12 @@
-
-
-
-
 export default function Footer() {
+    
     return (
-        <section id="skills" className="mb-16">
-            <h2 className="text-3xl font-semibold mb-4">
-                Footer
-            </h2>
-        </section>
-    )
-}
+      <footer className="flex bg-gray-100 items-center justify-center rounded-lg pb-4">
+        <div className="p-14 justify-center itemns">
+          <p className="text-sm text-neutral-900 font-semibold">
+            © 2025 Rodsone Bacela,  All rights reserved.
+          </p>
+        </div>
+      </footer>
+    );
+  }

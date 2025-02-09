@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export default function Header() {
     return (
-        <header className="py-8 mb-8">
-            <div className="container mx-auto flex justify-start m-5">
+        <header className="">
+            <div className="container mx-auto flex justify-start m-5 border-b-2">
                 <Link href="./">
                     <Image 
                         src="/rb-logo.svg"
