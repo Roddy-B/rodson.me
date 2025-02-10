@@ -7,7 +7,7 @@ export default function Header() {
             <div className="container mx-auto flex justify-center md:justify-start m-5 md:border-b-2 border-b-0">
                 <Link href="./">
                     <Image 
-                        src="/rb-logo.svg"
+                        src="/rb-logo.png"
                         alt="meu logo"
                         width={150}
                         height={150}

@@ -18,7 +18,7 @@ export default function Hero() {
                 </div>
                 <div className="md:w-1/2 p-5 md:p-10 flex justify-center">
                     <Image
-                        src="/rb-logo.svg"
+                        src="/rb-logo.png"
                         alt="My logo"
                         width={250}
                         height={250}
