@@ -35,7 +35,8 @@ export default function Contacto() {
   };
 
   return (
-    <div className="container mx-auto pb-10 ">
+    <section className=" pb-10 px-4 md:px-0">
+        <div className="container mx-auto  ">
         <h2 className="text-2xl font-semibold mb-4">
                 Contacto
         </h2>
@@ -110,6 +111,7 @@ export default function Contacto() {
 
         
       </div>
-    </div>
+        </div>
+    </section>
   );
 }
