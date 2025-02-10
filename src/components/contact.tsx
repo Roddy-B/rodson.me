@@ -2,8 +2,11 @@
 
 import React, { useState } from 'react';
 import type { NextPage } from 'next';
+import { FaPhone, FaEnvelope, FaCommentDots } from 'react-icons/fa';
 
 export default function Contacto() {
+
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -32,18 +35,21 @@ export default function Contacto() {
   };
 
   return (
-    <div className="container mx-auto pb-10 ">
+    <div className="container mx-auto px-4 pb-10 ">
         <h2 className="text-2xl font-semibold mb-4">
                 Contacto
         </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 border-2 border-gray rounded-lg p-8">
 
+      <div >
+            <p className="mb-6 text-gray-500">
+                We are deeply committed to delivering unparalleled service and unwavering support to ensure your experience exceeds expectations.
+            </p>
+        </div>
+
         {/* Left side: Form */}
-        <div>
+        <div className="border-2  bg-gray-50/30 border-gray-100 rounded-lg p-4">
           
-          <p className="mb-6 text-gray-500">
-            We are deeply committed to delivering unparalleled service and unwavering support to ensure your experience exceeds expectations.
-          </p>
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-2 gap-4 mb-4">
               <div>
@@ -98,24 +104,11 @@ export default function Contacto() {
               Submit
             </button>
           </form>
+
+          
         </div>
 
-        {/* Right side: Contact Information */}
-        <div className=" rounded p-6">
-          <div className="mb-4 border-2 border-gray-200 rounded-lg p-2 bg-gray-100">
-            <h3 className="font-bold mb-2">Numero</h3>
-            <p>861111111<br />8429999999</p>
-          </div>
-          <div className="mb-4 border-2 border-gray-200 rounded-lg p-2 bg-gray-100">
-            <h3 className="font-bold mb-2">Contact</h3>
-            <p>Talk to us and see how we can work<br />1800-14-0147</p>
-          </div>
-          <div className="mb-4 border-2 border-gray-200 rounded-lg p-2 bg-gray-100">
-            <h3 className="font-bold mb-2">Email</h3>
-            <p>teste123@gmail.com</p>
-          </div>
-        </div>
-
+        
       </div>
     </div>
   );

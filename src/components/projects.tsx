@@ -31,16 +31,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, projectName }) => {
 
 export default function Projects() {
   return (
-    <div className="pb-10 pt-10">
+    <div className="pb-10 pt-10 px-4 md:px-0">
       <div className="container mx-auto">
         <h1 className="text-#1A1A1A text-2xl font-bold mb-4 border-b-2 pb-2">Projects</h1>
         <div className="mb-8">
     
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 pt-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-8 pt-2">
             <ProjectCard imageSrc="/projects.png" projectName="Project 1" />
             <ProjectCard imageSrc="/projects.png" projectName="Project 2" />
-            <ProjectCard imageSrc="/projects.png" projectName="Project 2" />
-            <ProjectCard imageSrc="/projects.png" projectName="Project 2" />
+            <ProjectCard imageSrc="/projects.png" projectName="Project 3" />
+            <ProjectCard imageSrc="/projects.png" projectName="Project 4" />
             {/* Add more ProjectCard components as needed */}
           </div>
         </div>
