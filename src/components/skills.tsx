@@ -40,7 +40,7 @@ export default function Skills() {
                         className={`cursor-pointer ${activeCategory === 'technology' ? 'font-bold text-blue-900 ' : ''}`}
                         onClick={() => filterSkills('technology')}
                     >
-                        Tecnologias
+                        Tecnology
                     </h3>
                     <h3
                         className={`cursor-pointer ${activeCategory === 'language' ? 'font-bold text-blue-900' : ''}`}

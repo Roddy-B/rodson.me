@@ -38,13 +38,16 @@ export default function Contacto() {
     <section className=" pb-10 px-4 md:px-0">
         <div className="container mx-auto  ">
         <h2 className="text-2xl font-semibold mb-4">
-                Contacto
+                Contact
         </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 border-2 border-gray rounded-lg p-8">
 
       <div >
-            <p className="mb-6 text-gray-500">
-                We are deeply committed to delivering unparalleled service and unwavering support to ensure your experience exceeds expectations.
+            <p className=" text-gray-700 font-bold">
+                Let's Chat
+            </p>
+            <p className="mb-6 text-gray-700">
+                Tell me about your projects, and let's make something great together
             </p>
         </div>
 
