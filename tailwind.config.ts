@@ -11,6 +11,17 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        custone: "#6845e8",
+        custtwo: "#33d2ff",
+        custthree: "#000000",
+      },
+      fontFamily: {
+        franklin: ["Libre Franklin", "sans-serif"],
+        GTWalsheimPro: ["GT Walsheim Pro", "sans-serif"],
+        Inter: ["Inter", "sans-serif"],
+      },
+      backgrounImg: {
+        bckImg: "url(/code.png)",
       },
     },
   },

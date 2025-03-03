@@ -1,19 +1,29 @@
-import Image from "next/image";
-import Header from './../components/header';
-import Hero from './../components/hero';
-import Skills from "@/components/skills";
-import Projects from "@/components/projects";
-import Contact from "@/components/contact";
-import Footer from "@/components/footer";
+"use client";
+
+import { useState } from 'react';
+import Header from '../pages/header';
+import Hero from '../pages/hero';
+import Skills from "@/pages/skills";
+import Projects from "@/pages/projects";
+import Contact from "@/pages/contact";
+import Footer from "@/pages/footer";
+import About from '../pages/about';
 
 export default function Home() {
+  const [isPortuguese, setIsPortuguese] = useState<boolean>(false);
+
+    const handleLanguageChange = (lang: boolean) => {
+        setIsPortuguese(lang);
+    };
+
   return (
     <div>
-      <Header />
-      <Hero />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Header isPortuguese={isPortuguese} onLanguageChange={handleLanguageChange}/>
+      <Hero isPortuguese={isPortuguese} />
+      <About isPortuguese={isPortuguese}/>
+      <Skills isPortuguese={isPortuguese}/>
+      <Projects isPortuguese={isPortuguese}/>
+      <Contact isPortuguese={isPortuguese}/>
       <Footer />
     </div>
   );
