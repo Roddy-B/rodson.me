@@ -56,9 +56,9 @@ export default function Hero({ isPortuguese }: HeroProps) {
                             <TypeAnimation
                                 sequence={[
                                     content.jobs[0],
-                                    1000, // wait 1s
+                                    5000, // wait 1s
                                     content.jobs[1],
-                                    1000,
+                                    5000,
                                 ]}
                                 wrapper="span"
                                 speed={50}
