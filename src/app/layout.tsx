@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Libre_Franklin } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const interSans = Inter({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
       >
         <div className="max-w-[1150px] mx-auto bg-neutral-50/5 backdrop-blur-md lg:px-16 lg:py-4 sm:py-4">
         {children}
+        <Analytics />
         </div>
         
       </body>
