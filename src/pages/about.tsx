@@ -38,7 +38,7 @@ export default function About({ isPortuguese }: AboutProps) {
     const content = isPortuguese ? portugueseContent : englishContent;
 
     return (
-        <div className="pb-10 pt-10 px-4 md:px-0 font-GTWalsheimPro">
+        <div className="pb-10 pt-10 px-6 md:px-0 font-GTWalsheimPro">
             <div className="container mx-auto">
                 <h1 className="text-#1A1A1A text-3xl font-bold mb-4 border-b-2 pb-2">{content.title}</h1>
                 <div className="max-w-[750px] mx-auto text-2xl text-green-500">
@@ -56,19 +56,19 @@ export default function About({ isPortuguese }: AboutProps) {
                         </h2>
                         <div>
                             <h4 className="font-bold">{content.educationUniversity}</h4>
-                            <p className="text-lg font-Inter font-thin">{content.educationDegree}</p>
+                            <p className="text-sm font-Inter font-thin ">{content.educationDegree}</p>
                             <span>{content.educationDates}</span>
                         </div>
                     </div>
                 </div>
-                <div className="max-w-[750px] mx-auto flex justify-end pb-4">
+                <div className="max-w-[750px] mx-auto flex flex-col md:items-end">
                     <div>
                         <h2 className="flex items-center gap-2 text-green-500 font-semibold">
                             <PiCertificate className="text-4xl" /> {content.certificationTitle}
                         </h2>
                         <div>
                             <h4 className="font-bold">{content.certificationUniversity}</h4>
-                            <p className="text-lg font-Inter font-thin">{content.certificationCourse}</p>
+                            <p className="text-sm font-Inter font-thin">{content.certificationCourse}</p>
                             <span>{content.certificationDates}</span>
                         </div>
                     </div>

@@ -31,7 +31,7 @@ export default function Header({ isPortuguese, onLanguageChange }: HeaderProps) 
 
     return (
         <header className="">
-            <div className="container mx-auto flex justify-between items-center md:border-b-2 border-b-0">
+            <div className="container mx-auto flex justify-between items-center px-6 pt-4 md:border-b-2 border-b-0">
                 <div className="flex items-center">
                     <Link href="./" className="">
                         <Image1
@@ -40,11 +40,11 @@ export default function Header({ isPortuguese, onLanguageChange }: HeaderProps) 
                             width={150}
                             height={150}
                             priority
-                            className="md:w-150 md:h-150 hidden sm:w-120 sm:h-120 sm:mt-2 w-100 h-100"
+                            className="w-[120px] h-[120px] md:w-[150px] md:h-[150px} hidden sm:w-120 sm:h-120 sm:mt-2 w-100 h-100"
                         />
                     </Link>
                     <div className='m-2'>
-                        <div className='w-14 h-14 border-4 rounded text-white text-5xl font-mono font-extrabold flex items-center justify-center '>
+                        <div className=' w-10 h-10 text-2xl md:w-14 md:h-14 border-4 rounded text-white md:text-5xl font-mono font-extrabold flex items-center justify-center '>
                             <p className='text-center'>{displayLetter}</p>
                         </div>
                     </div>

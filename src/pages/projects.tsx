@@ -89,7 +89,7 @@ export default function Projects({ isPortuguese }: ProjectsProps) {
     const projectTitle = isPortuguese ? "Projectos" : "Projects";
 
     return (
-        <div className="pb-10 pt-10 px-4 md:px-0 font-GTWalsheimPro">
+        <div className="pb-10 pt-10 px-6 md:px-0 font-GTWalsheimPro">
             <div className="container mx-auto">
                 <h1 className="text-#1A1A1A text-3xl font-bold mb-4 border-b-2 pb-2">{projectTitle}</h1>
                 <div className="mb-8">

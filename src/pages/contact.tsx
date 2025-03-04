@@ -27,7 +27,7 @@ export default function Contacto({ isPortuguese }: AboutProps) {
   const emailAddress = 'rodsonfernandes03@gmail.com';
 
   return (
-    <section className=" pb-10 px-4 md:px-0 font-GTWalsheimPro">
+    <section className=" pb-10 px-6 md:px-0 font-GTWalsheimPro">
         <div className="container mx-auto  ">
         <h2 className="text-2xl font-semibold mb-4">
                 {content.title}

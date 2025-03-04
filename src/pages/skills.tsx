@@ -49,7 +49,7 @@ export default function Skills({ isPortuguese }: SkillsProps) {
     };
 
     return (
-        <section id="skills" className="mb-16 pt-10 px-4 md:px-0 font-GTWalsheimPro">
+        <section id="skills" className="mb-16 pt-10 px-6 md:px-0 font-GTWalsheimPro">
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold mb-4 md:text-left">
                     {content.title}

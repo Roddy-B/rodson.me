@@ -75,14 +75,15 @@ export default function Hero({ isPortuguese }: HeroProps) {
                         {content.downloadCV}
                     </a>
                 </div>
-                <div className="md:w-1/4 p-4 md:p-5 flex justify-center rounded">
+                <div className="md:w-1/4 p-6 md:p-5 flex justify-center rounded">
                     <Image
                         src="/rr.png"
                         alt="My logo"
-                        width={300}
-                        height={300}
+                        width={250}
+                        height={250}
                         objectFit="contain"
                         priority
+                        
                     />
                 </div>
             </div>
