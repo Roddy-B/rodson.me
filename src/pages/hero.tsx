@@ -2,10 +2,7 @@
 
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
-
-const Typewriter = dynamic(() => import('typewriter-effect'), {
-    ssr: false,
-});
+import { TypeAnimation } from 'react-type-animation';
 
 interface HeroProps {
     isPortuguese: boolean;
@@ -56,12 +53,17 @@ export default function Hero({ isPortuguese }: HeroProps) {
                             {content.iam}
                         </h2>
                         <h2 className='text-xl md:text-2xl font-bold mb-2 md:mb-4 font-franklin text-green-500'>
-                            <Typewriter
-                                options={{
-                                    strings: content.jobs,
-                                    autoStart: true,
-                                    loop: true,
-                                }}
+                            <TypeAnimation
+                                sequence={[
+                                    content.jobs[0],
+                                    1000, // wait 1s
+                                    content.jobs[1],
+                                    1000,
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                style={{ fontSize: '1em', display: 'inline-block' }}
+                                repeat={Infinity}
                             />
                         </h2>
                     </div>
